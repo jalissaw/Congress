@@ -1,0 +1,163 @@
+.congress {
+  background-image: url('./caps.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: ease-in 0.3s 0.2s all;
+  animation: 0.4s ease-in all;
+  animation-name: fromLeft ;
+}
+
+.svgs {
+  width: 100%;
+  height: 100%;
+}
+
+.titled {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.senate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+
+.senateName {
+  position: absolute;
+  left: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(197, 81, 81);
+  transform: rotate(270deg);
+  font-size: 5em;
+}
+
+
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.userInput {
+  height: 35px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background: rgba(160, 160, 160, 0.5)
+}
+
+.bio {
+  animation: 0.4s ease-in all;
+  animation-name: fromLeft ;
+}
+
+ul h2 {
+  font-size: 1.8em;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 5px 0px;
+  font-size: 1.2em;
+}
+
+
+.house {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(124, 117, 117);
+  transition: 0.3s all ease-in;
+}
+
+.numbers {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.namesHouse {
+  font-size: 1.7em;
+  color: white;
+}
+
+.house ul li {
+  font-size: 1.1em;
+  transition: 0.3s ease-in all;
+}
+
+.btn {
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: black solid 2px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.904);
+  transition: 0.25s ease-in;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: white;
+  background: rgb(10, 10, 10);
+  border: white solid 2px;
+}
+
+
+.left {
+  top: 50%;
+  left: 50px;
+}
+
+.right {
+  top: 50%;
+  right: 50px;
+}
+
+@keyframes fromLeft {
+  0%{opacity: 0; transform: translateX(-100px);}
+  100%{opacity: 1; transform: translateX(0px);}
+}
+
+
+@media only screen and (max-width: 415px)  {
+
+  .titled{
+    font-size: 1.2em;
+  }
+  .userInput {
+    width: 70%;
+    
+  }
+
+  .bio {
+    padding: 20px 20px;
+    font-size: 0.9em;
+  }
+
+  .btn {
+    top: 85%;
+  }
+}
+
+@media only screen and (max-width: 750px)  {
+  .userInput {
+    width: 70%;
+    
+  }
+}
